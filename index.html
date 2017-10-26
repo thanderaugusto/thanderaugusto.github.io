@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Calcular IMC - Thander</title>
+	<script src="js/libs/jquery-1.11.2.min.js"></script>
+	<script src="js/imc.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="formm" id="form" action="">
+			<h3>Calculo Imc</h3>
+			<label>Nome</label>
+			<input id="txtnome" type="text" placeholder="Infome seu nome" class="bg"><br>
+
+			<label>Peso</label>
+			<input type="text" id="txtpeso" placeholder="Infome seu peso" class="bg"><br>
+
+			<label>Altura</label>
+			<input type="text" id="txtaltura" placeholder="Infome sua altura" class="bg"><br>
+
+			<button id="btIns">Inserir</button>
+			<button id="btCalc" class="btCalc">Calcular IMC's</button>
+		</div>
+		<div class="container">
+			<section class="result">
+				<table class="tableadd">
+				  <tr class="tb">
+				    <th>Nome</th>
+				    <th>Peso</th>
+				    <th>Altura</th>
+				    <th>IMC</th>
+				    <th>Resultado</th>
+				  </tr>
+				</table>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
