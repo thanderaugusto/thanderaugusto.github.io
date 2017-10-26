@@ -1,0 +1,103 @@
+body{
+	margin: 0 auto;
+	padding: 0 auto;
+	left: 0;
+	top: 0;
+	text-decoration: none;
+	list-style-type: none;
+	background: #f5f5f5;
+	font-family: "Curier", sans-serif;
+	
+}
+
+
+.container {	
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.formm {
+	margin-top: 100px;
+	width: 300px;
+	background-color: #F6F61F6;
+	padding: 20px;
+	border:  solid 4px #cc0000;
+	font-size: 15px;
+
+}
+
+#sexo {
+	padding: 5px;
+}
+
+#lbpeso {
+	padding-left: 10px;
+}
+.formm input {
+	padding: 5px;
+	margin: 15px 15px 15px;
+}
+
+
+#btIns, #btCalc {
+	padding: 15px;
+	border: none;
+	background: #a2a2a2;
+	border-radius: 15px;
+}
+
+.btCalc {
+	display: none;
+}
+
+#btIns:hover, #btCalc:hover {
+	background: #000;
+	color: white;
+}
+
+.result { 
+	margin-top: 70px;
+}
+
+table {
+	border-spacing: 0;
+	text-align: left;
+	display: none;
+	border: 2px solid gray;
+	margin: 20px;
+}
+
+table tr td{
+	border-bottom: 2px solid #808080;
+}
+
+td, th {
+	width: 200px;
+}
+
+.tb, th {
+	background-color: #cc0000;
+	color: white;
+	padding: 5px;
+	margin-top: 10px;
+	border-bottom: 4px solid #ff9999;
+}
+
+tr.pessoa td {
+	padding: 10px;
+}
+
+
+.pessoa:hover {
+	background-color: #29293d;
+	color: white;
+}
+
+.pp {
+	cursor: pointer;
+}
