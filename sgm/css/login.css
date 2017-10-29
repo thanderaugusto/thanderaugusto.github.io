@@ -1,0 +1,69 @@
+ body {
+            font-family: 'Roboto', sans-serif;
+            background: #2C3338;
+            background-size: cover;
+            margin: 0 auto;
+            padding: 0;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
+        div .tit {
+            color: #fff;
+            font-weight: 500;
+        }       
+
+        form#LoginForm {
+            padding-top: 18px;
+            background: rgba(0, 0, 0, .4);
+            margin: 20% auto 0px auto;
+            max-width: 320px;
+            height: auto;
+            border-top: 4px solid #FACC2D;
+            border-bottom: 4px solid #FACC2D;
+            border-radius: 5px;
+        } 
+        i {
+            position: absolute;
+            margin: 24px 10px;
+            color: #aaa;
+        }
+        i:focus, input[type="text"]:focus {
+            color: #FACC2D;
+        }
+        .txt {
+            border: solid 1px #aaa;
+            padding: 10px 0px 10px 30px;
+            margin: 10px 0px 10px 0px;
+        }
+        .txt:focus {
+            border: solid 1px #FACC2D;
+        }
+
+        .bt {
+            width: 200px;
+            background: #FACC2D;
+            color: black;
+            border-style: none;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 17px;
+        }
+        .bt:hover {
+            background: #FCDA41;
+            color: black;
+        }
+        footer.rodape {
+            width: 100%;
+            background: rgba(0, 0, 0, .4);
+            position: fixed;
+            clear: both;
+            bottom: 0;
+            height: 35px;
+            text-align: center;
+        }
+        .rodape p {
+            color: #FACC2D;
+            padding: 10px;
+            font-size: 12px;
+        }

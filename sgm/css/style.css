@@ -1,0 +1,195 @@
+body {
+	font-family: 'Roboto', sans-serif;
+  background: url('../img/bg-sgmb.png') center center no-repeat fixed; 
+  background-size: 60%;
+  background-color: #2C3338;
+}
+
+
+
+.btop {
+	width: 100%;
+	height: 13px;
+	background: rgba(0, 0, 0, .4);
+	display: block;
+	margin: 0 auto;
+} 
+
+.bfooter {
+	width: 100%;
+	height: 13px;
+	background: rgba(0, 0, 0, .4);
+	bottom: 0;
+	margin: 0 auto;
+	position: absolute;
+}
+
+/*teste menu normal*/
+.menu {
+	margin-top: 40px;
+	margin-bottom: -100%;
+	transition: all .4s;
+	/*display: none; teste menu normal*/
+}
+/*teste menu normal*/
+
+.menu ul {
+  	position: relative;
+    float: left;
+
+}
+
+.menu ul li{
+  width: 160px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: -1.83px;
+}
+
+.menu a {
+  padding: 15px;
+  display: block;
+  text-align: center;
+  background-color: #FACC2D;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+.menu ul li:hover ul {
+  visibility: visible;
+}
+
+.menu a:hover {
+  background-color: #FFDE66;
+  color: #081830;
+}
+
+.menu ul ul li {
+	float: none;
+	border-bottom: solid 1px #3C3C3D;
+	display: block;
+	margin: 0;
+}
+
+.menu ul ul li a{
+	background-color: #D2D3D5;
+	color: #3C3C3D;
+	font-weight: 400;
+	text-decoration: none;
+
+}
+
+.menu ul ul li a:hover{
+	background-color: #3C3C3D;
+	color: #D2D3D5;
+	transition: all .4s;
+}
+
+.seta {
+	display: inline-block;
+	content: "";
+	border-right: solid 15px #000;
+	border-bottom: solid 15px transparent;
+	transform: rotate(45deg);
+	margin-left: -39px;
+	margin-right: 29px;
+}
+
+
+
+
+
+/*FIM DROP-DOWN*/
+
+/*RESPONSIVE*/
+
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #081830;
+  	color: #fff;
+  	font-weight: bold;
+  	text-align: center;
+  	font-size: 30px;
+  	cursor: pointer;
+  	width: 49.5px;
+  	height: 49.5px;
+  	float: left;
+	margin-top: 38.6px;
+	z-index: 999;
+        display: none;
+}
+
+#bt_menu {
+	display: none;
+}
+
+
+/*teste menu normal*/
+
+
+
+
+#bt_menu:checked ~.menu {
+	margin-left: 0;
+	display: inherit;
+	transition: all .4s;
+}
+
+div.modalp {
+	padding-top: 11%;
+}
+
+
+
+
+
+/*teste menu normal*/
+
+@media(max-width: 800px) {
+	.menu {
+		margin-top: 5px;
+		margin-left: -100%;
+		display: none;
+		transition: all .4s;
+	}
+	
+	#bt_menu:checked ~.menu {
+		margin-left: 0;
+		display: inherit;
+	}
+	.menu ul li{
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.menu ul ul {
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+
+	.menu ul li ul{
+		height: auto;
+		max-height: 200px;
+		visibility: visible;
+
+	}
+	.menu ul {
+		float: none;
+	}
+
+
+label[for="bt_menu"]{
+	display: block;
+}
+	
+} 
