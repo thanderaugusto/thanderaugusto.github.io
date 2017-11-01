@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI IMC</title>
+
+  <script src="js/libs/jquery-1.11.2.min.js"></script>
+  <script src="jqueryui/jquery-ui.min.js"></script>
+  <script src="js/calc.js"></script>
+  <link rel="stylesheet" href="jqueryui/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+  
+  </script>
+</head>
+<body>
+ 
+<div id="dialog-form" title="Adicionar Pessoa">
+  <p class="validateTips">Preencha todos campos</p>
+ 
+  <form>
+    <fieldset>
+      <label for="nome" class="lb">Nome</label>
+      <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="text ui-widget-content">
+      <label for="peso" class="lb">Peso&nbsp</label>
+      <input type="number" name="peso" id="peso" placeholder="Digite seu peso" class="text ui-widget-content">
+      <label for="altura" class="lb">Altura</label>
+      <input type="number" name="altura" id="altura" placeholder="Digite sua altura" class="text ui-widget-content">
+ 
+      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </fieldset>
+  </form>
+</div>
+ 
+ 
+<div id="users-contain" class="ui-widget td">
+  <h1>Pessoas Adicionadas para calculo IMC</h1>
+  <table id="users" class="ui-widget ui-widget-content">
+    <thead>
+      <tr class="ui-widget-header ">
+        <th>Nome</th>
+        <th>Peso</th>
+        <th>Altura</th>
+        <th>Imc</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+  <button id="create-user">Calcular IMC</button>
+  <button id="limparTab" class="ui-button ui-corner-all ui-widget">Limpar Tabela</button>
+</div>
+
+ 
+ 
+</body>
+</html>
