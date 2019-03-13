@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora XTA</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalise.css">
+    
+</head>
+<body >
+    <div>
+        <header class="header-custos">
+            <div class="container">
+                    <div class="row">
+                            <h1 class="offset-1 col-10">Calculadora de Custos</h1>
+                    </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row calc">
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 config-text">
+                    <label for="lado1">Medida 1</label><br>
+                    <input type="text" name="lado1" id="lado1" onkeyup="replaceString()" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 config-text">
+                    <label for="lado2">Medida 2</label><br>
+                    <input type="text" name="lado2" id="lado2" onkeyup="replaceString()" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10  config-text">
+                    <label for="">Resultado</label><br>
+                    <p id="resultado">0.0 m²</p>
+                </div>
+            </div>
+            <div class="row calc">
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 config-text">
+                        <label for="metro">Valor do M²</label><br>
+                        <input type="text" name="metro" id="metro" onkeyup="replaceString()" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10  config-text">
+                        <label for="">Valor Venda</label><br>
+                        <p id="valor">R$ 0,00 </p>
+                    </div>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 limpar">
+                        <button type="submit" onclick="Limpar()"  id="limpar">LIMPAR</button>
+                </div>
+            </div>
+            <div class="row custo">
+                    <div class="col-10">
+                            <button type="submit" id="custo" data-toggle="modal" onclick="Verificar()">LUCRO</button>
+                    </div>
+            </div>
+            <div class="row sair">
+                <div class="col-10">
+                        <a href="index" id="bt-sair">  VOLTAR</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="modal fade" id="modalLucro" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="titulo-modal">CALCULAR LUCRO</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" onclick="LimparModal()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="custoM" class="col-form-label">CUSTO M²</label>
+                                <input type="text" class="modalInput" id="custoM" onkeyup="replaceString()" inputmode="numeric" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">TOTAL CUSTO</label>
+                                <p id="valorModalTotal">R$ 0,00 </p>
+                            </div>
+                            <div class="form-group lucro">
+                                    <label for="" class="col-form-label">SEU LUCRO SERÁ</label>
+                                    <p id="valorModalLucro">R$ 0,00 </p>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-modal" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="titulo-modal">AVISO</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" onclick="LimparModal()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group lucro">
+                                        <label for="" class="col-form-label">Preencha todos os campos</label>
+                                    </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-modal" data-dismiss="modal" >Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <footer>
+            Desenvolvido por Thander Augusto
+        </footer>
+    </div> 
+    
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/update.js"></script>
+
+</body>
+</html>

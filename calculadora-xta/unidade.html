@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora XTA</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalise.css">
+</head>
+<body >
+    <div>
+        <header class="header-custos">
+            <div class="container">
+                    <div class="row">
+                            <h1 class="offset-1 col-10">Unidades por M²</h1>
+                    </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row calc">
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 config-text">
+                    <label for="lado1">Medida 1 em CM</label><br>
+                    <input type="text" name="lado1" id="lado1" onkeyup="replaceStringUnidade()" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 config-text">
+                    <label for="lado2">Medida 2 em CM</label><br>
+                    <input type="text" name="lado2" id="lado2" onkeyup="replaceStringUnidade()" inputmode="numeric" autocomplete="off">
+                </div>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 config-text">
+                    <label for="qtdMetro">Quantidade de M²</label><br>
+                    <input type="text" name="qtdMetro" id="qtdMetro" onkeyup="replaceStringUnidade()" inputmode="numeric" autocomplete="off">
+                </div>
+            </div>
+            <div class="row calc">
+                <form>
+                    <div class="check-corte">
+                        <input type="checkbox" id="check" name="check" value="" onclick="replaceStringUnidade()"/>
+                        <label for="check">
+                                <span></span>Com Corte
+                        </label>
+                    </div>
+                </form>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10  config-text">
+                        <label for="">unidades em média</label><br>
+                        <p id="resQtde">0</p>
+                    </div>
+                <div class="col-md-6 col-xl-4 col-sm-12 col-10 limpar">
+                        <button type="submit" onclick="LimparUn()"  id="limpar">LIMPAR</button>
+                </div>
+            </div>
+
+            <div class="row sair">
+                <div class="col-10">
+                        <a href="index" id="bt-sair">  VOLTAR</a>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            Desenvolvido por Thander Augusto
+        </footer>
+    </div> 
+    
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/update.js"></script>
+</body>
+</html>

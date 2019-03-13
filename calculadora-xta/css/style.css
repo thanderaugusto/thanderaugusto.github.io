@@ -1,0 +1,345 @@
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(82,0,149);
+    background: -moz-linear-gradient(90deg, rgba(82,0,149,1) 0%, rgba(175,0,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(82,0,149,1) 0%, rgba(175,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(82,0,149,1) 0%, rgba(175,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#520095",endColorstr="#af00ff",GradientType=1); 
+}
+
+header, footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 2, 107);
+    color: white;
+}
+
+header {
+    height: 100px;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+
+.calc, .custo, .inicial, .sair {
+    margin-top:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.calc::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 20px;
+    background-color: rgb(67, 10, 114);
+    margin-top: 20px;
+    opacity: .5;
+}
+
+
+.campo-number {
+    text-align: center;
+}
+
+
+.calc label {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 99;
+    font-weight: 700;
+}
+
+.calc input{
+    border-radius: 50px;
+    border: solid 2px rgb(162, 49, 255);
+    width: 60%;
+    height: 75px;
+    text-align: center;
+}
+
+.calc input:focus {
+    border: solid 4px rgb(181, 92, 255);
+    -webkit-box-shadow: 0px 0px 57px -19px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 57px -19px rgba(0,0,0,1);
+    box-shadow: 0px 0px 57px -19px rgba(0,0,0,1);
+    transition: ease .1s;
+}
+
+
+#lado1, #lado2, #metro, #qtdMetro{
+    padding: 10px 20px 10px 20px;
+}
+
+.calc .config-text, input {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    bottom: 30px;
+    padding: 20px 0 0 0;
+}
+
+.calc #resultado, .calc #valor, #resQtde {
+    color: #fff;
+    font-size: 48px;
+    padding-top: 22px;
+}
+
+
+
+.calucular-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limpar, .custo, .inicial, .sair, .modal-body form{
+    text-align: center;
+}
+
+#limpar {
+    width: 80%;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#limpar:hover {
+    background-color: #fff;
+    color: rgb(76, 0, 138);
+    -webkit-box-shadow: 0px 0px 70px -15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 70px -15px rgba(0,0,0,1);
+    box-shadow: 0px 0px 70px -15px rgba(0,0,0,1);
+    transition: all .3s;
+}
+
+
+#custo {
+    width: 90px;
+    background-color: #fff;
+    color: rgb(76, 0, 138);
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#custo:hover {
+    width: 200px;
+    color: rgb(125, 33, 201);
+    -webkit-box-shadow: 0px 0px 70px -15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 70px -15px rgba(0,0,0,1);
+    box-shadow: 0px 0px 70px -15px rgba(0,0,0,1);
+    transition: all .3s;
+}
+
+
+.bt-inicial {
+    width: 80%;
+    height: 120px;
+    background: rgba(82,0,149, .6);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+.bt-inicial:hover {
+    width: 100%;
+    transition: all .3s;
+    border-radius: 50px 0 50px 0;
+}
+
+.sair {
+    margin-top: -15px !important;
+}
+
+#bt-sair {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 100px;
+}
+
+#bt-sair:hover {
+    transition: ease .2s;
+    color: rgb(224, 155, 255);
+}
+
+
+/**Modalr**/
+
+#valorModalTotal {
+    font-size: 25px;
+    color: rgb(162, 49, 255);
+}
+
+#valorModalLucro {
+    color: rgb(162, 49, 255);
+    font-size: 40px;
+}
+
+.modal {
+    font-weight: 700;
+}
+
+#titulo-modal {
+    color: rgb(162, 49, 255);
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+.form-group {
+    z-index: 20;
+}
+
+.modalInput {
+    width: 60%;
+    border-radius: 50px;
+    border: solid 4px rgb(162, 49, 255);
+    height: 75px;
+    text-align: center;
+    font-size: 33px;
+    color: black;
+    padding: 10px;
+    margin: 0 50px 0 50px;
+}
+
+.modalInput:focus {
+    border: solid 6px rgb(162, 49, 255);
+    transition: ease .1s;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+
+.btn-modal {
+    background-color: rgb(108, 11, 186);
+    color: #fff;
+    width: 400px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    clear: both;
+    padding: 8px 0 8px 0;
+    font-size: 12px;
+}
+
+
+/**Check Box**/
+.check-corte {
+    padding: 0 0 20px 0;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+  }
+  label span {
+    display: inline-block;
+    position: relative;
+    background-color: #390464;
+    width: 25px;
+    height: 25px;
+    transform-origin: center;
+
+    border-radius: 50%;
+    vertical-align: -6px;
+    margin-right: 10px;
+    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(0.78, -1.22, 0.17, 1.89);
+  }
+  label span:before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 13px;
+    left: 9px;
+    transition: width 50ms ease 50ms;
+    transform-origin: 0% 0%;
+  }
+  label span:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+    transform: rotate(305deg);
+    top: 16px;
+    left: 10px;
+    transition: width 50ms ease;
+    transform-origin: 0% 0%;
+  }
+  label:hover span:before {
+    width: 5px;
+    transition: width 100ms ease;
+  }
+  label:hover span:after {
+    width: 10px;
+    transition: width 150ms ease 100ms;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + label span {
+    background-color: #fff;
+    transform: scale(1.25);
+  }
+  input[type="checkbox"]:checked + label span:after {
+    width: 10px;
+    background: #6b0cb9;
+    transition: width 150ms ease 100ms;
+  }
+  input[type="checkbox"]:checked + label span:before {
+    width: 5px;
+    background: #6b0cb9;
+    transition: width 150ms ease 100ms;
+  }
+  input[type="checkbox"]:checked + label:hover span {
+    background-color: #fff;
+    transform: scale(1.25);
+  }
+  input[type="checkbox"]:checked + label:hover span:after {
+    width: 10px;
+    background: #6b0cb9;
+    transition: width 150ms ease 100ms;
+  }
+  input[type="checkbox"]:checked + label:hover span:before {
+    width: 5px;
+    background: #6b0cb9;
+    transition: width 150ms ease 100ms;
+  }
