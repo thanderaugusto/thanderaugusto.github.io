@@ -1,0 +1,58 @@
+<!DOCTYPE html ">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InfoPrice - cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cadastro.css" />
+
+</head>
+
+<body>
+    <header id="main-header">
+        <a href="cadastro.html"><img src="img/logo.svg" alt="InfoPrice" class="animated fadeInLeft" ></a>
+        <a href="" onclick="logout()" class="animated fadeInRight">SAIR</a>
+
+    </header>
+    <form onsubmit="submitcadastrar(event)" id="formProdutos" class="animated bounceInUp">
+        <div class="form-group">
+            <label for='titulo'>Título:</label>
+            <input class="form-control" id="titulo" name="titulo" type="text" autocomplete="off" required placeholder="Digite o título do produto!">
+        </div>
+        <div class="form-group">
+            <label for='descricao'>Descricão:</label>
+            <textarea class="form-control" id="descricao" name="descricao" type="text" autocomplete="off" required placeholder="Digite a descrição do produto!"></textarea>
+        </div>
+        <div class="form-group">
+            <label for='slug'>Nome para URL:</label>
+            <input class="form-control" id="slug" name="slug" type="text" autocomplete="off" required placeholder="Substituir espaços por - hífem">
+        </div>
+        <div class="form-group">
+            <label for='preco'>Preço do Produto:</label>
+            <input class="form-control" id="preco" name="preco" type="text" autocomplete="off" required placeholder="Digite o preço do produto!">
+        </div>
+    
+        <input class="btn btnCadastrar" value='CADASTRAR' type="submit">
+    </form>
+    <div class="success">
+        <span id="success"></span>
+    </div>
+    <div class="error">
+        <span id='error'></span>
+    </div>
+
+    <footer></footer>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

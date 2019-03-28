@@ -1,0 +1,47 @@
+/* Página de Cadastro */
+header#main-header {
+    height: 130px;
+    background-color :#07093D;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+    border-bottom: 4px solid #DE070E;
+}
+
+header#main-header img {
+    width: 300px;
+    margin-left: 100px;
+}
+
+header#main-header a {
+    color: #fff;
+    margin-right: 100px;
+    transition: all .2s;
+}
+
+header#main-header a:hover {
+    color:  #DE070E;
+}
+
+
+form#formProdutos {
+    width: 700px;
+    margin: 0 auto
+}
+form#formProdutos {
+    width: 700px;
+    margin: 0 auto
+}
+
+form#formProdutos label {
+    color: #fff;
+}
+
+.btnCadastrar {
+    color: #fff;
+    font-weight: 400;
+}

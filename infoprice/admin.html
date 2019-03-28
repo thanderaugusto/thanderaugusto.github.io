@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InfoPrice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div id="conteudo">
+        <a href="index.html"><img src="img/logo.svg" alt="InfoPrice" id="logoLogin" class="animated fadeInDown"></a>
+
+        <form onsubmit="submitlogin(event)" id="formLogin" class="animated bounceInLeft">
+            <div class="contentCard">
+                <div class="form-group">
+                    <label for='usuario'>E-mail</label>
+                    <input class="form-control" id="usuario" name="usuario" type="email" autocomplete="off"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for='senha'>Senha</label>
+                    <input class="form-control" id="senha" name="senha" type="password" autocomplete="current-password"
+                        required>
+                </div>
+            </div>
+            <input class="btn btnLogin" value='LOGAR' type="submit">
+
+        </form>
+        <a href="./busca.html" id="linkSLogin" class="animated fadeInRight">NAVEGAR SEM LOGAR <i class="fas fa-angle-right setae"></i></a>
+    
+
+        <div class="error">
+            <span id='error'></span>
+        </div>
+
+    </div>
+
+    <footer></footer>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InfoPrice - Busca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/busca.css" />
+
+</head>
+
+<body>
+    <header id="main-header">
+        <a href="index.html"><img src="img/logo.svg" alt="InfoPrice" class="animated fadeInLeft"></a>
+
+        <div class="animated fadeInRight">
+            <form onsubmit="submitdata(event)" id="myform">
+                <input id="search" name="search" type="text" autocomplete="off" placeholder="Digite sua busca!" required>
+                <input class="btn btnBusca" value='BUSCAR' type="submit">
+                <a onclick="exibirTudo(event)" id="exibirTudo">EXIBIR TUDO</a>
+            </form>
+            
+        </div>
+    </header>
+    <h3 id="erro"></h3>
+    <div id="lista-produtos">
+
+    </div>
+
+    <footer></footer>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/busca.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+</body>
+
+</html>
