@@ -1,14 +1,14 @@
 const shareBtn = document.querySelector('.share-btn');
 const ogBtnContent = shareBtn.textContent;
 const title = 'Share link';
-const text = 'Testando o sharelink'
+const text = 'Testando o sharelink';
 const url = 'https://www.instagram.com/thanderaugusto/'
 
 shareBtn.addEventListener('click', () => {
   if (navigator.share) {
     navigator.share({
       title,
-      text
+      text,
       url
     }).then(() => {
       showMessage(shareBtn, 'Ok! 😄');
