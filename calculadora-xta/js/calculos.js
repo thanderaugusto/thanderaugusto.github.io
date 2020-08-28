@@ -112,7 +112,7 @@ if(navigator.share !== undefined) {
         e.preventDefault();
         let data= {
             title: 'Link',
-            text: 'Link de compartilhamento!'
+            text: 'Link de compartilhamento!',
             url: 'https://www.instagram.com/thanderaugusto/'
         }
         navigator.share(data)
