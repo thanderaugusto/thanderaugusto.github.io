@@ -106,19 +106,21 @@ LimparModal = ()=> {
 }
 
  
-
-document.querySelector('#share').addEventListener('click', e =>{
-    e.preventDefault();
-    let data= {
-        title: 'Link',
-        text: 'Link de compartilhamento!'
-        url: 'https://www.instagram.com/thanderaugusto/'
-    }
-    navigator.share(data)
-        .then(() => console.log('Obrigado por compartilhar <3'),
-        error => console.log('Erro ao compartilhar:', error));
-    }); 
-})
+if(navigator.share !== undefined) {
+    document.querySelector('#hide').style.display ='' //test
+    document.querySelector('#share').addEventListener('click', e =>{
+        e.preventDefault();
+        let data= {
+            title: 'Link',
+            text: 'Link de compartilhamento!'
+            url: 'https://www.instagram.com/thanderaugusto/'
+        }
+        navigator.share(data)
+            .then(() => console.log('Obrigado por compartilhar <3'),
+            error => console.log('Erro ao compartilhar:', error));
+        }); 
+    })
+}
 
 
  
