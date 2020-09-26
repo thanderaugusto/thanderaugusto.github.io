@@ -105,7 +105,7 @@ LimparModal = ()=> {
     resValorModalLucro.innerHTML = "R$ 0,00";
 }
 
- 
+
 if(navigator.share !== undefined) {
     document.querySelector('#hide').style.display ='' //test
     document.querySelector('#share').addEventListener('click', e =>{
@@ -118,9 +118,6 @@ if(navigator.share !== undefined) {
         navigator.share(data)
             .then(() => console.log('Obrigado por compartilhar <3'),
             error => console.log('Erro ao compartilhar:', error));
-        }); 
-    })
+        });
 }
 
-
- 
